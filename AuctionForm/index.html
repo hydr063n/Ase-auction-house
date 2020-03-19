@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@markovbellic</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <img src="images/logo.jpg" class="logo" />
+
+            <br>
+            <p>
+                Welcome to Ase's Auction House ⚖️ ! Please enter your Auction details and we will return a receipt ID for your auction that you can publish on the Discord Server! Then watch as all the bids pour in 🤑 !
+            </p>
+
+            <form action="/form" method="post">
+                
+                <div class="form-group">
+                    <label>Image</label>
+                    <input type="file" name="title" class="form-control"/>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" name="title" class="form-control"/>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea name="description" class="form-control"></textarea>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label>Delivery</label>
+                    <select  name="delivery" class="form-control">
+                        <option>Link</option>
+                        <option>Contact Details</option>
+                    </select>
+                </div> -->
+
+                <div class="form-group">
+                    <label>Prize</label> 
+                    <input type="text" name="prize" class="form-control" placeholder="Link or Delivery"/>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Expiry</label>
+                    <input type="number" name="expiry" class="form-control" min="5" max="180" placeholder="Max: 180 minutes" />
+                </div>
+
+                <input type="submit" value="Submit Auction" class="submit-btn" />
+            </form>
+
+
+        </div>
+
+        <footer>
+            <img src="images/logo.jpg" class="small-logo" />
+
+            <p>&copy; 2020 Ase's Auction House</p>
+        </footer>
+
+    </body>
+</html>
